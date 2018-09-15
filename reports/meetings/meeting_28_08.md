@@ -7,7 +7,7 @@ Date: 28.08.18
 | Group Members  | Other |
 | ------------- | -------- |
 | Sondre | Henrik Lieng |
-| Bendict |
+| Bendik |
 | Andre |
 
 ### Pourpose
