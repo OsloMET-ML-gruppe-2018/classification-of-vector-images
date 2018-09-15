@@ -11,15 +11,24 @@ Date: 15.09.18
 | Bendik |
 
 ### Pourpose
-
+ - Working together on the first sub goal
+ 
 
 ### Discussion
-
+ - What network to use
+ - how to organise the data
+ 
 
 ### Action points
-
+ - All are looking for a network to test .png files on
+ - All get to know Darknet as good as possible
+ - Sondre will make a VM image we can use to setup our network
+ - Andre will clean the data we are going to use
+ 
+ 
 
 ### Next Meeting
   date
   #### Next meeting agenda
   - point
+  
