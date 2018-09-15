@@ -10,8 +10,8 @@ Date: 28.08.18
 | Bendict |
 | Andre |
 
-### Porpose
-Porpose of the meeting was for the group to meet and to receive a more in depth presentation of the project by Henrik
+### Pourpose
+Pourpose of the meeting was for the group to meet and to receive a more in depth presentation of the project by Henrik
 
 ### Discussion
 
