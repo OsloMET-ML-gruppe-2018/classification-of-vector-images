@@ -6,9 +6,9 @@ Date: 28.08.18
 ### Attended
 | Group Members  | Other |
 | ------------- | -------- |
-| Sondre | Henrik Lieng |
-| Bendik |
-| Andre |
+| Sondre s305349 | Henrik Lieng |
+| Bendik s301100|
+| Andre s182417 |
 
 ### Pourpose
 Pourpose of the meeting was for the group to meet and to receive a more in depth presentation of the project by Henrik
