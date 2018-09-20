@@ -11,7 +11,7 @@ Date: 15.09.18
 | Bendik |
 
 ### Pourpose
- - Working together on the first sub goal
+ - Working together on the first sub goal from Henrik: "Test PNG images on exisisting trained models".
  
 
 ### Discussion
@@ -28,7 +28,7 @@ Date: 15.09.18
  
 
 ### Next Meeting
-  date
+  date TBD
   #### Next meeting agenda
-  - point
+  - Complete testing with darknet
   
