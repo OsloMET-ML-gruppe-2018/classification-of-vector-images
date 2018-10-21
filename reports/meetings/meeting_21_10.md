@@ -25,9 +25,9 @@ We have chosen to upload the dataset to Google Drive hosted under a newly create
 
 THe group has searched through online sources for a suitable trained model to test our data with. As of now we have not found a suitable model that matches our focus features. We have of this meeting decided to move forward with training our own model to test the PNG images.
 
-### Focus festures:
+##### Focus features:
  - Collections
- - Single elements
+ - Single element
 
 
 ### Action points
