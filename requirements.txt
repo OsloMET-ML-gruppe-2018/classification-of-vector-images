@@ -11,3 +11,5 @@ python-dotenv>=0.5.1
 google-api-python-client
 httplib2
 oauth2client
+pyunpack
+patool
