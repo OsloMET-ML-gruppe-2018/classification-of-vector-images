@@ -1,4 +1,4 @@
-##Categories MTURK
+## Categories MTURK
 
 Count:  52032 images in collections.txt<br/>
 Count:  99630 images in single-elements.txt<br/>
