@@ -28,3 +28,229 @@ Count:  21546  and  100.0 %  of images cards are in Collectionss<br/>
 
 **Card labels in Abstract**<br/>
 Count:  0  and  0.0 %  of images in cards are in Abstract<br/>
+
+
+## Categories: Categories
+
+#### For label: floral
+heart % overlap : 8.519820971867007
+bird % overlap : 4.804045512010114
+ball % overlap : 5.634474211078273
+nature % overlap : 20.701674966047985
+car % overlap : 2.9392117568470275
+icons % overlap : 3.6801244982050325
+food % overlap : 1.088395352257685
+tree % overlap : 20.350351654076583
+hand % overlap : 9.438977084979527
+background % overlap : 11.344065892923998
+common_categories % overlap : 0.0
+pattern % overlap : 24.20814479638009
+people % overlap : 3.641798328554871
+
+
+#### For label: heart
+floral % overlap : 3.5923704252881308
+bird % overlap : 4.567003792667509
+ball % overlap : 3.927924492325293
+nature % overlap : 1.312811226799457
+car % overlap : 0.4008016032064128
+icons % overlap : 4.219498823987125
+food % overlap : 1.3163700544197676
+tree % overlap : 2.2597030476686637
+hand % overlap : 5.014007614395517
+background % overlap : 2.9432940702128274
+common_categories % overlap : 0.0
+pattern % overlap : 2.934106334841629
+people % overlap : 5.9507106691880685
+
+
+#### For label: bird
+floral % overlap : 2.0489317247421988
+heart % overlap : 4.619565217391304
+ball % overlap : 1.3728668128515589
+nature % overlap : 9.348121321865097
+car % overlap : 0.7348029392117569
+icons % overlap : 1.855093992607919
+food % overlap : 0.9927930578026181
+tree % overlap : 3.952852305287835
+hand % overlap : 2.629121471158681
+background % overlap : 1.58972439017366
+common_categories % overlap : 0.0
+pattern % overlap : 1.5978506787330315
+people % overlap : 1.6226438113829074
+
+
+#### For label: ball
+floral % overlap : 3.9832850306665764
+heart % overlap : 6.585677749360613
+bird % overlap : 2.275600505689001
+nature % overlap : 1.7111815301041196
+car % overlap : 2.404809619238477
+icons % overlap : 4.813694802553628
+food % overlap : 2.9121929695543463
+tree % overlap : 4.024485543110186
+hand % overlap : 4.9637238704116085
+background % overlap : 3.7035970394263167
+common_categories % overlap : 0.0
+pattern % overlap : 2.007918552036199
+people % overlap : 5.654852681022388
+
+
+#### For label: nature
+floral % overlap : 30.82159466199366
+heart % overlap : 4.635549872122762
+bird % overlap : 32.63274336283185
+ball % overlap : 3.6037753837353415
+car % overlap : 4.074816299265197
+icons % overlap : 8.232090119723416
+food % overlap : 14.811001617884983
+tree % overlap : 48.88642875748893
+hand % overlap : 7.944831549457653
+background % overlap : 9.797540535092015
+common_categories % overlap : 0.0
+pattern % overlap : 10.371889140271493
+people % overlap : 5.200390410541084
+
+
+#### For label: car
+floral % overlap : 0.2965559075284761
+heart % overlap : 0.0959079283887468
+bird % overlap : 0.1738305941845765
+ball % overlap : 0.3432167032128897
+nature % overlap : 0.2761430511543685
+icons % overlap : 0.39259377155286757
+food % overlap : 0.0588321812031181
+tree % overlap : 0.6837718155769732
+hand % overlap : 0.22986854392644207
+background % overlap : 0.3398323877545143
+common_categories % overlap : 0.0
+pattern % overlap : 0.19796380090497737
+people % overlap : 0.46361251753797356
+
+
+#### For label: icons
+floral % overlap : 14.025746444699063
+heart % overlap : 38.13938618925831
+bird % overlap : 16.577117572692792
+ball % overlap : 25.95099628181905
+nature % overlap : 21.072883657763693
+car % overlap : 14.829659318637276
+food % overlap : 25.327254007942347
+tree % overlap : 18.937223235217505
+hand % overlap : 28.970619926729402
+background % overlap : 16.13051867638165
+common_categories % overlap : 0.0
+pattern % overlap : 9.488122171945701
+people % overlap : 24.788019276520465
+
+
+#### For label: food
+floral % overlap : 0.997506234413965
+heart % overlap : 2.8612531969309463
+bird % overlap : 2.1333754740834387
+ball % overlap : 3.775383735341787
+nature % overlap : 9.117247623358987
+car % overlap : 0.5344021376085505
+icons % overlap : 6.0905087803066476
+tree % overlap : 5.958582964313623
+hand % overlap : 5.193592414338051
+background % overlap : 3.326325490309017
+common_categories % overlap : 0.0
+pattern % overlap : 3.6623303167420818
+people % overlap : 2.5559690111633016
+
+
+#### For label: tree
+floral % overlap : 21.06220934151109
+heart % overlap : 5.546675191815856
+bird % overlap : 9.59228824273072
+ball % overlap : 5.89188673848794
+nature % overlap : 33.98370303304662
+car % overlap : 7.014028056112225
+icons % overlap : 5.142624719260085
+food % overlap : 6.728930725106633
+hand % overlap : 6.738021693843834
+background % overlap : 7.565590530772111
+common_categories % overlap : 0.0
+pattern % overlap : 7.918552036199094
+people % overlap : 4.8374306106264875
+
+
+#### For label: hand
+floral % overlap : 8.856237783918582
+heart % overlap : 11.157289002557546
+bird % overlap : 5.783817951959545
+ball % overlap : 6.5878539422251885
+nature % overlap : 5.006790402897239
+car % overlap : 2.137608550434202
+icons % overlap : 7.132120183210426
+food % overlap : 5.316958376231798
+tree % overlap : 6.108361552487627
+background % overlap : 5.742591365953403
+common_categories % overlap : 0.0
+pattern % overlap : 6.822680995475112
+people % overlap : 9.580308668334045
+
+
+#### For label: background
+floral % overlap : 26.548493630787895
+heart % overlap : 16.336317135549873
+bird % overlap : 8.72313527180784
+ball % overlap : 12.260463342549336
+nature % overlap : 15.400633770937075
+car % overlap : 7.882431529726119
+icons % overlap : 9.905034749854105
+food % overlap : 8.493896161200176
+tree % overlap : 17.10731961448294
+hand % overlap : 14.323683643416421
+common_categories % overlap : 0.0
+pattern % overlap : 51.49179864253394
+people % overlap : 9.766363691819679
+
+
+#### For label: common_categories
+floral % overlap : 0.0
+heart % overlap : 0.0
+bird % overlap : 0.0
+ball % overlap : 0.0
+nature % overlap : 0.0
+car % overlap : 0.0
+icons % overlap : 0.0
+food % overlap : 0.0
+tree % overlap : 0.0
+hand % overlap : 0.0
+background % overlap : 0.0
+pattern % overlap : 0.0
+people % overlap : 0.0
+
+
+#### For label: pattern
+floral % overlap : 23.07744153130687
+heart % overlap : 6.633631713554987
+bird % overlap : 3.571428571428571
+ball % overlap : 2.707598436457241
+nature % overlap : 6.641014033499321
+car % overlap : 1.8704074816299265
+icons % overlap : 2.373247033441208
+food % overlap : 3.809383732901897
+tree % overlap : 7.293566032821047
+hand % overlap : 6.931973277781768
+background % overlap : 20.9745701696282
+common_categories % overlap : 0.0
+people % overlap : 2.488867199414384
+
+
+#### For label: people
+floral % overlap : 8.047448945204556
+heart % overlap : 31.186061381074172
+bird % overlap : 8.4070796460177
+ball % overlap : 17.67566021546382
+nature % overlap : 7.718424626527841
+car % overlap : 10.153640614562457
+icons % overlap : 14.372115231577274
+food % overlap : 6.162670981026622
+tree % overlap : 10.328210471476947
+hand % overlap : 22.56303426477983
+background % overlap : 9.221553437203006
+common_categories % overlap : 0.0
+pattern % overlap : 5.769230769230769
