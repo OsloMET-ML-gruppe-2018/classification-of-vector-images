@@ -42,8 +42,8 @@ def gen_dict_of_label_lists(not_include_label:str) -> dict:
     return dict_of_label_lists
 
 
-def string_to_list(string:str) -> list:
-    return string.split("\n")
+def string_to_list(string:str) -> iter:
+    return set(string.split("\n"))
 
 def remove_file_ending(filename:str):
     return filename.split(".")[0]
