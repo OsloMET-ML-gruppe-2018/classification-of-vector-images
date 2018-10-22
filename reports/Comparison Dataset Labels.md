@@ -8,23 +8,23 @@ Count:  21546 images in cards.txt<br/>
 ----------------------------------------------------------------------------------------------------
 
 **Collection labels in Single-Element**<br/>
-Count:  45124  and  86.72355473554735 %  of images are in both lists<br/>
+Count:  45124  and  86.72355473554735 %  of images are in Single-Element<br/>
 
 **Abstract labels in Single-Element**<br/>
-Count:  23578  and  100.0 %  of images in abstracts are in both lists<br/>
+Count:  23578  and  100.0 %  of images in abstracts are in Single-Element<br/>
 
 **Card labels in Single-Element**<br/>
-Count:  21546  and  100.0 %  of images in cards are in both lists<br/>
+Count:  21546  and  100.0 %  of images in cards are in Single-Element<br/>
 
 ----------------------------------------------------------------------------------------------------
 
 **Abstract labels in Collections**<br/>
-Count:  23578  and  100.0 %  of images in abstracts are in both lists<br/>
+Count:  23578  and  100.0 %  of images in abstracts are in Collections<br/>
 
 **Card labels in Collections**<br/>
-Count:  21546  and  100.0 %  of images cards are in both lists<br/>
+Count:  21546  and  100.0 %  of images cards are in Collectionss<br/>
 
 ----------------------------------------------------------------------------------------------------
 
 **Card labels in Abstract**<br/>
-Count:  0  and  0.0 %  of images are in both lists<br/>
+Count:  0  and  0.0 %  of images in cards are in Abstract<br/>
