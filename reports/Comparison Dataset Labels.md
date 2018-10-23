@@ -32,6 +32,8 @@ Count:  0  and  0.0 %  of images in cards are in Abstract<br/>
 
 ## Categories: Categories
 
+### Sum of unique images in categories: 157303
+
 #### For label: floral
 heart % overlap : 8.519820971867007<br>
 bird % overlap : 4.804045512010114<br>
