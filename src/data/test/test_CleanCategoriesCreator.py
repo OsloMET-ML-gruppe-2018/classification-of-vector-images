@@ -26,3 +26,11 @@ class TestCleanCategoriesCreator(unittest.TestCase):
         testObj = CleanCategoriesCreator(Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/Categories/categories"),
                                          Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/data_png/data_png_128"))
         testObj.create(Path("/home/sondre/PycharmProjects/classification-of-vector-images"))
+
+    def test_split_dataset(self):
+        testObj = CleanCategoriesCreator(
+            Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/Categories/categories"),
+            Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/data_png/data_png_128"))
+        train, test = testObj.split_datasett(testObj._categories["car"])
+        print(len(train))
+        print(len(test))

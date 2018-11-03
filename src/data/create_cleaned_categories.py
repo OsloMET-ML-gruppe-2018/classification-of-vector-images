@@ -1,5 +1,6 @@
 from pathlib import Path
 import shutil
+import os
 
 class CleanCategoriesCreator:
     """ Cleans categories passed, creates new folders containing cleaned data
@@ -18,16 +19,26 @@ class CleanCategoriesCreator:
 
         try:
             category_folder = path_to_create_folder.joinpath("cleaned_categories/")
+            train_folder = path_to_create_folder.joinpath("cleaned_categories/train/")
+            test_folder = path_to_create_folder.joinpath("cleaned_categories/test")
             category_folder.mkdir()
+            train_folder.mkdir()
+            test_folder.mkdir()
         except IsADirectoryError as err:
             print("Cleaned Category directory has already been created. No action is taken")
         else:
             label_folder_paths = {}
             for label in self._cleaned_categories:
-                category_folder.joinpath(label).mkdir()
-                label_folder_paths[label] = category_folder.joinpath(label + "/")
+                label_train_folder = train_folder.joinpath(label)
+                label_test_folder = test_folder.joinpath(label)
+                label_train_folder.mkdir()
+                label_test_folder.mkdir()
+                label_folder_paths[label] = {}
+
+                label_folder_paths[label]["train"] = label_train_folder
+                label_folder_paths[label]["test"] = label_test_folder
             for label in label_folder_paths:
-                self.copy_files_into_folder(self._images_path, label_folder_paths.get(label), self._cleaned_categories.get(label))
+                self.create_datasets_in_folders(self._images_path, label_folder_paths.get(label)["train"], label_folder_paths.get(label)["test"], self._cleaned_categories.get(label))
 
     def _create_categories_data_store(self):
         self._categories = gen_dict_of_label_lists(self.categories_path)
@@ -70,10 +81,28 @@ class CleanCategoriesCreator:
         for id in id_list:
             file_path = files_location.joinpath(id + "_128.png")
             try:
+                if os.stat(str(file_path.absolute())).st_size == 0:
+                    continue
                 shutil.copyfile(str(file_path.absolute()), str(folder_location.joinpath(str(id + "_128.png")).absolute()))
             except FileNotFoundError as err:
                 count_files_not_found += 1
         print("files not found: " + str(count_files_not_found))
+
+    def create_datasets_in_folders(self, files_path: Path, train_path: Path, test_path: Path, id_list):
+        train, test = self.split_datasett(id_list)
+        self.copy_files_into_folder(files_path, train_path, train)
+        self.copy_files_into_folder(files_path, test_path, test)
+
+    def split_datasett(self, dataset):
+        dataset = list(dataset)
+        dataset_size = len(dataset)
+        dataset_train_count = int(dataset_size * 0.8)
+
+        train_ids = dataset[:dataset_train_count]
+        test_ids = dataset[dataset_train_count:]
+        return set(train_ids), set(test_ids)
+
+
 
 
 def make_dict_of_list_into_set(dictonary: dict):
@@ -111,8 +140,8 @@ if __name__ == "__main__":
 
     # NB change paths
     testObj = CleanCategoriesCreator(
-        Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/Categories/categories"),
+        Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/categories/categories"),
         Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/data_png/data_png_128"))
-    testObj.create(Path("/home/sondre/PycharmProjects/classification-of-vector-images"))
+    testObj.create(Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/processed"))
 
 
