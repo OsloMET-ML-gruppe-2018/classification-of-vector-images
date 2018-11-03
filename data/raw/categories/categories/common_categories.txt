@@ -1,0 +1,13 @@
+icon, icons
+background, wallpaper
+pattern
+nature, plant
+food
+people, man, woman
+hand
+tree, leaf
+floral, ornament
+bird
+car
+ball
+heart

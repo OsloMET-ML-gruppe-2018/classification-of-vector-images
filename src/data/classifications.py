@@ -1,6 +1,7 @@
 from pathlib import Path
 import math
 
+
 def classification_overlap(class_label:str):
     path_str = "../../data/raw/categories/categories/{}.txt".format(class_label)
     path = Path(path_str)
@@ -26,9 +27,6 @@ def classification_overlap(class_label:str):
     for label in perc_dict:
         print(str(label) + " % overlap : " + str(perc_dict.get(str(label))) + "<br>")
     print("\nSum of unique images in categories: " + str(len(unique_ids)))
-
-
-
 
 
 def gen_dict_of_label_lists(not_include_label:str) -> dict:
