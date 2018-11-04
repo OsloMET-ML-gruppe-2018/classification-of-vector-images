@@ -1,6 +1,6 @@
 # Group Meeting
 
-Date: 05.11.18
+Date: 03.11.18
 
 ### Attended
 | Group Members  | Other |
