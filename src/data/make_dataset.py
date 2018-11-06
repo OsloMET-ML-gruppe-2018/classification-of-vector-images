@@ -61,7 +61,7 @@ def is_dataset_downloaded() -> bool:
 
 def extract_data(from_path: Path, to_path:str):
     archive = pyunpack.Archive(from_path)
-    archive.extractall(to_path, True)
+    archive.extractall(str(to_path), True)
 
 def main():
     path = Path("../../data/raw/data_png.rar")
