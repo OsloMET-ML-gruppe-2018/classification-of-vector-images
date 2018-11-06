@@ -27,7 +27,7 @@ def connect_to_drive():
 
     # Call the Drive v3 API
     results = service.files().list(
-        pageSize=10, fields="nextPageToken, files(id, name)").execute()
+        pageSize=40, fields="nextPageToken, files(id, name)").execute()
     items = results.get('files', [])
 
 
@@ -65,7 +65,7 @@ def extract_data(from_path: Path, to_path:str):
 
 def main():
     path = Path("../../data/raw/data_png.rar")
-    if not is_dataset_downloaded():
+    if is_dataset_downloaded():
         path = connect_to_drive()
     extract_data(path, "../../data/raw/data_png/")
 
