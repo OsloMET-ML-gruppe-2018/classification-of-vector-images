@@ -65,7 +65,7 @@ def extract_data(from_path: Path, to_path:str):
 
 def main():
     path = Path("../../data/raw/data_png.rar")
-    if is_dataset_downloaded():
+    if not is_dataset_downloaded():
         path = connect_to_drive()
     extract_data(path, "../../data/raw/data_png/")
 
