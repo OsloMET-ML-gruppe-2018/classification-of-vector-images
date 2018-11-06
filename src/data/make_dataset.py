@@ -60,7 +60,7 @@ def is_dataset_downloaded() -> bool:
 
 
 def extract_data(from_path: Path, to_path:str):
-    archive = pyunpack.Archive(from_path)
+    archive = pyunpack.Archive(str(from_path))
     archive.extractall(str(to_path), True)
 
 def main():
