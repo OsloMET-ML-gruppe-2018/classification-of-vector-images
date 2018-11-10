@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import os
 
+
 class CleanCategoriesCreator:
     """ Cleans categories passed, creates new folders containing cleaned data
     """
@@ -103,8 +104,6 @@ class CleanCategoriesCreator:
         return set(train_ids), set(test_ids)
 
 
-
-
 def make_dict_of_list_into_set(dictonary: dict):
     for list in dictonary:
         dictonary[list] = set(dictonary.get(list))
@@ -128,6 +127,7 @@ def string_to_list(string: str) -> iter:
             data.remove(value)
     return set(data)
 
+
 def remove_file_ending(filename: str):
     return filename.split(".")[0]
 
@@ -140,8 +140,6 @@ if __name__ == "__main__":
 
     # NB change paths
     testObj = CleanCategoriesCreator(
-        Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/categories/categories"),
-        Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/raw/data_png/data_png_128"))
-    testObj.create(Path("/home/sondre/PycharmProjects/classification-of-vector-images/data/processed"))
-
-
+        Path("../../data/raw/categories/categories"),
+        Path("../../data/raw/data_png/data_png_128"))
+    testObj.create(Path("../../data/processed"))
