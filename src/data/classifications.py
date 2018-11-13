@@ -1,5 +1,6 @@
 from pathlib import Path
 import math
+import csv
 
 
 def classification_overlap(class_label:str):
@@ -29,6 +30,7 @@ def classification_overlap(class_label:str):
     print("\nSum of unique images in categories: " + str(len(unique_ids)))
 
 
+
 def gen_dict_of_label_lists(not_include_label:str) -> dict:
     path_str = "../../data/raw/categories/categories/"
     path = Path(path_str)
@@ -48,6 +50,13 @@ def string_to_list(string:str) -> iter:
 
 def remove_file_ending(filename:str):
     return filename.split(".")[0]
+
+def write_to_csv(class_label_list, label_dict, perc_dict):
+    file_path = Path("../../data/processed/overlap.csv")
+    with file_path.open("w+") as file:
+        csv_writer = csv.DictWriter(file, ["label", "label_image_count", "compared_label",
+                                           "image_overlap_amount", "overlap_percent"])
+
 
 
 

@@ -13,3 +13,9 @@ httplib2
 oauth2client
 pyunpack
 patool
+
+# notebook requirements
+jupyter
+pandas
+matplotlib
+numpy
