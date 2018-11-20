@@ -95,6 +95,49 @@ def create_mturk_dataset():
     with store_file_path.open("w+") as writer:
         writer.write(data)
 
+def get_clean_dataset_size():
+    dataset_path = Path("../../data/processed/cleaned_categories")
+    test_dir = dataset_path.joinpath("test")
+    train_dir = dataset_path.joinpath("train")
+
+
+    image_count = 0
+    for dir in test_dir.iterdir():
+        for pfile in dir.iterdir():
+            if pfile.is_file():
+                image_count += 1
+    for dir in train_dir.iterdir():
+        for pfile in dir.iterdir():
+            if pfile.is_file():
+                image_count += 1
+    return image_count
+
+def get_clean_subcat_size():
+    dataset_path = Path("../../data/processed/cleaned_categories")
+    test_dir = dataset_path.joinpath("test")
+    train_dir = dataset_path.joinpath("train")
+    categories = {}
+
+
+    for dir in test_dir.iterdir():
+        image_count = 0
+        for pfile in dir.iterdir():
+            if pfile.is_file():
+                image_count += 1
+        categories[dir.name] = image_count
+    for dir in train_dir.iterdir():
+        image_count = 0
+        for pfile in dir.iterdir():
+            if pfile.is_file():
+                image_count += 1
+        categories[dir.name] += image_count
+    return categories
 
 if __name__ == "__main__":
-    get_category_sizes()
+    #get_category_sizes()
+    print("clean_image caount: " + str(get_clean_dataset_size()))
+    pp(get_clean_subcat_size())
+    check_count = 0
+    for label, value in get_clean_subcat_size().items():
+        check_count += value
+    print("clean image count: " + str(check_count))

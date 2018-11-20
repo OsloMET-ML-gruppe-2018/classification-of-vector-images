@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os, sys
 
-DATA_SOURCE = '..\\..\\reports\\trainings\\class_data\\'
-MODEL_STATE_DATA = '\model_state_data\\'
+DATA_SOURCE = '../../reports/trainings/class_data/'
+MODEL_STATE_DATA = '\model_state_data/'
 PLOT_DATA = '\plot_data'
 #['acc_scores.txt', 'loss.txt', 'val_acc_pr_epoch.txt', 'val_loss_pr_epoch']
 
@@ -13,19 +13,19 @@ VAL_ACC_SCORES = []
 LOSS = []
 VAL_LOSS = []
 
-with open(DATA_SOURCE + PLOT_DATA + '\\loss.txt', 'r') as file:
+with open(DATA_SOURCE + PLOT_DATA + '/loss.txt', 'r') as file:
 	for i in file.readlines():
 		LOSS.append(i.strip('\n'))
 
-with open(DATA_SOURCE + PLOT_DATA + '\\val_loss_pr_epoch', 'r') as file:
+with open(DATA_SOURCE + PLOT_DATA + '/val_loss_pr_epoch', 'r') as file:
 	for i in file.readlines():
 		VAL_LOSS.append(i.strip('\n'))
 
-with open(DATA_SOURCE + PLOT_DATA + '\\acc_scores.txt', 'r') as file:
+with open(DATA_SOURCE + PLOT_DATA + '/acc_scores.txt', 'r') as file:
 	for i in file.readlines():
 		ACC_SCORES.append(i.strip('\n'))
 
-with open(DATA_SOURCE + PLOT_DATA + '\\val_acc_pr_epoch.txt', 'r') as file:
+with open(DATA_SOURCE + PLOT_DATA + '/val_acc_pr_epoch.txt', 'r') as file:
 	for i in file.readlines():
 		VAL_ACC_SCORES.append(i.strip('\n'))
 
@@ -57,16 +57,16 @@ plt.show()
 ###### Visualization of desirable and undesirable images ######
 import matplotlib.image as mpimg
 
-IMG_SOURCE_DES = '..\\..\\data\imshow_data\desirable'
-IMG_SOURCE_UNDES ='..\\..\\data\imshow_data\\not_desirable'
-BALL = '\\ball'
+IMG_SOURCE_DES = '../../data\imshow_data\desirable'
+IMG_SOURCE_UNDES ='../../data\imshow_data/not_desirable'
+BALL = '/ball'
 
 def get_image_names(path):
 
 	tmpList = []
 
 	for img_name in os.listdir(path):
-		tmp = mpimg.imread(path + '\\' + img_name)
+		tmp = mpimg.imread(path + '/' + img_name)
 		tmpList.append(tmp)
 	return tmpList
 
